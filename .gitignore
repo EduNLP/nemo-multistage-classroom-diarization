@@ -1,4 +1,46 @@
 /w2v2-robust-large-ckpt/ckpt-1.pt
 /vad_output_frames
 /whisper_output_frames
+__pycache__/
+*.pyc
+
+# Logs and reports
+*.log
+logs/
+**/logs/
+reports/*.csv
+
+# Audio and heavy data
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.opus
+*.aac
+*.wma
+*.mp4
+classbank_audio_data/
+
+# Generated manifests
+manifests/tmp_*
+models/whisper/*.pt
 checkpoints/
+**/*.ckpt
+**/*.nemo
+models/**/*.pt
+models/**/*.bin
+models/**/*.safetensors
+ui_uploads/
+diarization_output/
+vad_outs*.json
+
+# NeMo vendored code: exclude large/binary artifacts
+NeMo/**/*.nemo
+NeMo/**/checkpoints/**
+NeMo/**/results/**
+NeMo/**/datasets/**
+NeMo/**/wandb/**
+NeMo/**/artifacts/**
+NeMo/**/__pycache__/**
+NeMo/**/.ipynb_checkpoints/**

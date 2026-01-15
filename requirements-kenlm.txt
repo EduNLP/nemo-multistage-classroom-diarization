@@ -1,0 +1,2 @@
+# Optional: KenLM (build from source). Use only on Linux with build tools installed.
+-e git+https://github.com/kpu/kenlm.git@f6c947dc943859e265fabce886232205d0fb2b37#egg=kenlm

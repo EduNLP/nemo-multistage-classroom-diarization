@@ -1,0 +1,35 @@
+## Core runtime for Windows (CPU/GPU-agnostic, exclude torch/torchaudio)
+numpy==1.26.4
+scipy>=1.11,<1.16
+soundfile==0.13.1
+librosa==0.10.2.post1
+resampy==0.4.3
+tqdm>=4.66
+cffi>=1.16
+
+# Whisper/Transformers stack
+transformers>=4.41
+accelerate>=0.30
+safetensors>=0.4
+sentencepiece>=0.2
+huggingface_hub>=0.23
+openai-whisper==20240930
+
+# VAD/feature utils
+scikit-learn==1.6.1
+speechbrain==1.0.2
+
+# NeMo helpers used by offline_diar_infer.py
+lightning==2.4.0
+hydra-core==1.3.2
+omegaconf==2.3.0
+
+# Safer replacement (build-free) for editdistance
+editdistance-s==1.0.0
+
+# Video support (optional, improves video-to-audio extraction when ffmpeg CLI is absent)
+moviepy>=1.0.3
+imageio-ffmpeg>=0.5.1
+
+# Audio enhancement (DeepFilterNet3)
+deepfilternet>=0.5

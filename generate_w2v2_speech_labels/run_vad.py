@@ -66,11 +66,10 @@ for line in tqdm(manifest_lines):
     try:
         entry = json.loads(line.strip())
         audio_path = entry.get("audio_filepath")
-        num_speakers = entry.get("num_speakers")
         rttm_path = entry.get('rttm_filepath')
         print("Trying", audio_path)
-        if not audio_path or not num_speakers:
-            print("Missing audio_filepath or num_speakers in entry:", entry)
+        if not audio_path:
+            print("Missing audio_filepath in entry:", entry)
             continue
 
         vad(audio_path, model, frames_output_path=frames_output, vad_manifest_path=vad_manifest_path)

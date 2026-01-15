@@ -1,0 +1,3 @@
+## Optional NeMo toolkit on Windows (may fail depending on environment)
+nemo-toolkit==2.2.0
+

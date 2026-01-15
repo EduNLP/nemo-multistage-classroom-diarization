@@ -1,0 +1,11 @@
+.git
+logs/
+diarization_output/
+vad_output_frames/
+whisper_output_frames/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.DS_Store
