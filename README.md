@@ -16,8 +16,8 @@ The system is optimized for the teacher-student interaction patterns typically f
 
 1. **Clone and setup the repository:**
    ```bash
-   git clone https://github.com/EduNLP/edm25-nemo-classroom-diarization.git
-   cd edm25-nemo-classroom-diarization
+   git clone https://github.com/EduNLP/nemo-multistage-classroom-diarization.git
+   cd nemo-multistage-classroom-diarization
    rm -rf NeMo
    # Clone the NVIDIA NeMo repository
    git clone https://github.com/NVIDIA/NeMo.git
